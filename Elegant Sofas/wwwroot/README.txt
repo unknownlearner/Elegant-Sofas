@@ -110,12 +110,20 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 - Publishing has been done successfully
 - Now the App can be accessed via this URL: https://coolsofa.azurewebsites.net/
 
+====> PART 11: Authenication & Authorization <====
+
+2024-03-10
+Authentication and Authorization have been added to the application
+- Once the published app on Azure accessed via this URL: https://coolsofa.azurewebsites.net/Identity/Account/Login?ReturnUrl=%2F
+- Login page prompts, you should input these admin credentials: 
+username: admin@yahoo.com
+passwrd: @Cyber12345     //-----------------------------------> Credentials here ----------<>
 
 							============> END OF THE APP NOTES <============ 
 
 
 &&&&&&& Finally saving the updates to GitHub repository &&&&&&&
-Here is repo URL: 
+Here is repo URL: https://github.com/hemin979/Elegant-Sofas
 
 
 Source of Data: The data has been collected from teppermans:
