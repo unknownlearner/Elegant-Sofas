@@ -22,15 +22,15 @@ namespace Elegant_Sofas.Controllers
                 return Problem("Entity set 'Elegant_SofasContext.Sofas'  is null.");
             }
 
-            var movies = from m in _context.Sofas
+            var sofas = from m in _context.Sofas
                          select m;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                movies = movies.Where(s => s.Product!.Contains(searchString));
+                sofas = sofas.Where(s => s.Product!.Contains(searchString));
             }
 
-            return View(await movies.ToListAsync());
+            return View(await sofas.ToListAsync());
         }
 
         // GET: Sofas/Details/5
@@ -62,7 +62,7 @@ namespace Elegant_Sofas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Product,Color,Material,Price")] Sofas sofas)
+        public async Task<IActionResult> Create([Bind("Id,Product,Color,Material,Price,Rating")] Sofas sofas)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +94,7 @@ namespace Elegant_Sofas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Product,Color,Material,Price")] Sofas sofas)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Product,Color,Material,Price, Rating")] Sofas sofas)
         {
             if (id != sofas.Id)
             {
