@@ -114,7 +114,7 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 
 
 &&&&&&& Finally saving the updates to GitHub repository &&&&&&&
-Here is repo URL: 
+Here is repo URL: https://github.com/hemin979/Elegant-Sofas.git
 
 
 Source of Data: The data has been collected from teppermans:
