@@ -102,13 +102,14 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 ====> PART 10: Deployment and publishing the App to MS Azure Cloud <====
 
 2024-03-07 1200
-
+  Sandeep singh
+  I completed my deployment part of Devsofa app.
 - Rebuilding the app and publishing it to MS Azure
 - Create App Service on Azure cloud
 - Create SQL database on Azure cloud
 - Create an instance on the App and start publishing to Azure
 - Publishing has been done successfully
-- Now the App can be accessed via this URL: https://coolsofa.azurewebsites.net/
+- Now the App can be accessed via this URL: https://dev-sofa.azurewebsites.net
 
 ====> PART 11: Authenication & Authorization <====
 
